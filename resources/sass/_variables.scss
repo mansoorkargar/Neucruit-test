@@ -1,0 +1,114 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+@font-face {
+    font-family: sanslight;
+    src: url(/fonts/OpenSauceSans-Light.ttf);
+}
+@font-face {
+    font-family: sansregular;
+    src: url(/fonts/OpenSauceSans-Regular.ttf);
+}
+@font-face {
+    font-family: sansmedium;
+    src: url(/fonts/OpenSauceSans-Medium.ttf);
+}
+$font-family-open-sans: 'Open Sans', serif;
+$font-family-open-sans-medium: sansmedium;
+$font-family-open-sans-regular: sansregular;
+$font-family-open-sans-light: sanslight;
+$font-default-size: 16px;
+$font-default-weight: 400;
+$font-default-sm: 14px;
+
+// Colors
+$color-primary: #6D79B8;
+$color-primary-dark: #4142A2;
+$color-primary-light: #9FA7D1;
+$color-secondary: #00C7A8;
+$color-secondary-light: #00C7A8;
+$color-light: #F6F7FA;
+$color-dark: #343F44;
+$color-teal: #E9EAF7;
+$color-tertiary: #FFFADE;
+$color-quaternary: #D9EDFD;
+$color-white: #FFFFFF;
+$color-black: #3E4756;
+$color-icone: #7E8A9D;
+$color-grd-light: #8A8D9B;
+$color-logo-text: #959DCC;
+$color-b-bottom: #E0E0E0;
+$color-border-light: #D8E2EE;
+$color-txt-light: #5D6E82;
+$color-txt-blue: #2E4299;
+$color-txt-silver: #666666;
+$color-button-green: #59C4A9;
+$color-button-txt-green: #114F45;
+$color-bg-silver: #F4F4F4;
+
+// rgba colors
+$shadow-color: #34405012;
+$shadow-bottom-color: #3440501A;
+
+$colors: (
+    primary: $color-primary,
+    primary-dark: $color-primary-dark,
+    primary-light: $color-primary-light,
+    secondary: $color-secondary,
+    secondary-light: $color-secondary-light,
+    light: $color-light,
+    dark: $color-dark,
+    teal: $color-teal,
+    tertiary: $color-tertiary,
+    quaternary: $color-quaternary,
+    white: $color-white,
+    black: $color-black,
+    icone: $color-icone,
+    grd-light: $color-grd-light,
+    border-light: $color-border-light,
+    txt-light: $color-txt-light,
+    bg-silver: $color-bg-silver
+);
+
+@each $color, $value in $colors {
+    .txt-#{$color} {
+       color: $value !important;
+    }
+    .n-bg-#{$color} {
+        background-color: $value !important;
+    }
+}
+
+// Text alignments
+$texts: (
+    left,
+    right,
+    center,
+    justify
+);
+
+@each $aligh in $texts {
+    .txt-#{$aligh} {
+       text-align: $aligh !important;
+    }
+}
+
+// Floats
+$floats: (
+    left,
+    right,
+    none,
+    inherit
+);
+
+@each $float in $floats {
+    .fl-#{$float} {
+       float: $float;
+    }
+}
+
+// Gradients
+$grd-primary: linear-gradient(99.34deg, #6D79B8 3.88%, #9FA7D1 99.4%);
+$grd-secondary: linear-gradient(99.34deg, #00C7A8 3.88%, #75C1AA 99.4%);
+$grd-light: linear-gradient(178.44deg, #F6F7FA -19.66%, #E9EAF7 98.67%);

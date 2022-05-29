@@ -1,0 +1,61 @@
+.left {
+    height: 100vh;
+    background-color: $color-primary;
+    width: 41%;
+}
+
+.header {
+    height: calc(100% - 172px);
+    background: url('/images/backgrounds/auth_bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    .header_row {
+        padding-top: 42%;
+    }
+}
+
+.title {
+    font-family: Open Sauce Sans;
+    font-style: normal;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 55px;
+
+    h1 {
+        font-weight: 600;
+        font-size: 55px;
+        line-height: 121.4%;
+        margin-bottom: 0;
+        position: relative;
+        top: 30px;
+    }
+
+    p {
+        font-size: 14px;
+        position: relative;
+        top: 20px;
+    }
+}
+
+.right {
+    width: 59%;
+}
+
+.form_wrapper {
+    margin: 10% auto 0 auto;
+    width: 510px;
+    max-width: 100%;
+
+    .form_wrapper_body {
+        border: 1px solid #E0E0E0;
+        border-radius: 12px;
+    
+        h2 {
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 35px;
+            color: #3E4756;
+        }
+    }
+}

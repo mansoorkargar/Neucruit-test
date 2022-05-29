@@ -1,0 +1,73 @@
+#secondary_navbar {
+    height: 100%;
+    border-right: 1px solid #EAECF5;
+    ul {
+        li {
+            a {
+                width: 100%;;
+                padding: 35px 17%;
+                box-sizing: border-box;
+                border-bottom: 1px solid #EAECF5;
+                &.router-link-active {
+                    position: relative;
+                    &::before {
+                        content: ' ';
+                        position: absolute;
+                        top: 0;
+                        left: 0px;
+                        width: 8px;
+                        height: 100%;
+                        background-color: $color-primary-dark;
+                    }
+                    &::after {
+                        content: ' ';
+                        position: absolute;
+                        top: 0;
+                        right: -2px;
+                        width: 4px;
+                        height: 100%;
+                        background-color: $color-white;
+                    }
+                }
+            }
+            .dot {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                display: inline-block;
+                line-height: 1.8;
+                margin-right: 20px;
+                position: relative;
+                &.checkmark {
+                    color: $color-primary-dark!important;
+                    &::after {
+                        content: ' ';
+                        position: absolute;
+                        height: 15px;
+                        width: 10px;
+                        left: 10px;
+                        top: 6px;
+                        border-top: 2px solid $color-white;
+                        border-left: 2px solid $color-white;
+                        transform: rotate(-135deg);
+                    }
+                }
+            }
+            &.disbled {
+                a {
+                    border-color: $color-white;
+                    &:hover {
+                        cursor: not-allowed;
+                        text-decoration: none;
+                    }
+                }
+                .dot {
+                    background-color: #CFCFCF !important;
+                }
+                .name {
+                    color: #CFCFCF !important;
+                }
+            }
+        }
+    }
+}

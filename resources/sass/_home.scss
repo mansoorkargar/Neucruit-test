@@ -1,0 +1,176 @@
+.left_container {
+    width: 15.5%;
+    min-width: 224px;
+    height: 100vh;
+    overflow: auto;
+    box-shadow: 4px 0px 15px 0px $shadow-color;
+
+    .setup_logo_section {
+        padding: 14px 0;
+        padding-left: 19px;
+        border-bottom: 1px solid $color-b-bottom;
+        .logo {
+            img {
+                width: 30px;
+            }
+        }
+        h4 {
+            font-size: 30px;
+            margin-left: 10px;
+            font-family: $font-family-open-sans-medium;
+            color: $color-logo-text;
+            opacity: 0.8;
+        }
+    }
+    .setup_navigation_section {
+        padding-top: 10px;
+        .dashboard {
+            width: 100%;
+            padding: 8px 26px;
+            img {
+                width: 11px;
+            }
+            p {
+                margin-left: 16px;
+                font-size: 14px;
+            }
+        }
+        .engage_section {
+            padding: 27px 33px;
+            padding-left: 26px;
+            overflow: auto;
+            .engage {
+                padding-left: 0;
+                .line {
+                    width: 100%;
+                    height: 1px;
+                    margin: 3px 0 0 12px !important;
+                }
+                p {
+                    opacity: 0.4;
+                    font-size: 10px;
+                }
+            }
+            .dashboard_nav {
+                li {
+                    margin-top: 21px;
+                    a {
+                        cursor: pointer;
+                        .icons_frame {
+                            width: 12px;
+                            .dashboard_icon {
+                                width: 9.66px;
+                            }
+                            .outreach_icon {
+                                width: 12px;
+                            }
+                            .manage_icon {
+                                width: 10.6px;
+                            }
+                        }
+                        p {
+                            font-size: 14px;
+                            margin-left: 18px;
+                            font-family: $font-family-open-sans-regular;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.right_container {
+    width: 84.5%;
+    min-width: calc(100% - 224px);
+    .head{
+        height: 72px;
+        width: 100%;
+        box-shadow: 0px 4px 10px 0px $shadow-bottom-color;
+        position: relative;
+        z-index: 10;
+        .trial_name {
+            p {
+                font-family: $font-family-open-sans-medium;
+                font-size: 24px;
+                span {
+                    font-family: $font-family-open-sans-regular;
+                    font-size: 24px;
+                }
+            }
+        }
+        .user_menu {
+            .user_info {
+                border: 1px solid $color-b-bottom;
+                border-radius: 5px;
+                padding: 4px 0;
+                padding-left: 7px;
+                width: 134px;
+                height: 36px;
+                .case {
+                    color: $color-txt-blue;
+                    font-size: 8px;
+                    font-family: $font-family-open-sans-regular;
+                }
+                p {
+                    color: $color-txt-silver;
+                    font-size: 12px;
+                    font-family: $font-family-open-sans-regular;
+                }
+            }
+            button {
+                height: 36px;
+                width: 103px;
+                background-color: $color-button-green;
+                font-size: 12px;
+                font-family: $font-family-open-sans-medium;
+                padding: 0;
+                color: $color-button-txt-green;
+                margin-left: 17px;
+                img {
+                    width: 7.5px;
+                    margin-left: 7px
+                }
+            }
+            .user {
+                border-radius: 50%;
+                width: 36px;
+                height: 36px;
+                margin-left: 17px;
+                margin-top:4px;
+                cursor: pointer;
+            }
+        }
+    }
+    .dashboard_container {
+        width: 100%;
+        height: calc(100vh - 72px);
+        overflow: auto;
+        .get_start_section {
+            background-color: #fff;
+            margin-top: 86px;
+            border-radius: 8px;
+            width: 100%;
+        }
+        .tutorial_section {
+            background-color: #fff;
+            margin-top: 86px;
+            padding: 0;
+            border-radius: 8px;
+            width: 100%;
+            .video {
+                width: 285px;
+                min-height: 210px;
+                img {
+                    height: 100%;
+                }
+            }
+            .tutorial_info_section {
+                padding: 31px 33px;
+            }
+        }
+    }
+    .form-control {
+        height: auto;
+    }
+}

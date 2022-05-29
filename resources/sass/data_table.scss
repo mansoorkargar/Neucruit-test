@@ -1,0 +1,100 @@
+.tbl_body {
+    .d-table > :not(:first-child) {
+        border-color: #e8e8e9;
+    }
+
+    .d-table > tbody tr:nth-of-type(odd) {
+        background-color: #eceff2;
+    }
+
+    .d-table {
+        tr {
+            td,
+            th {
+                padding: 0.625rem;
+                border-color: #e8e8e9;
+                border-width: 1px;
+                font-size: 14px;
+                &:first-child {
+                    padding-left: 1.5rem;
+                    border-left: 0 !important;
+                }
+                &:last-child {
+                    border-right: 0 !important;
+                }
+            }
+            
+        }
+
+        thead
+        {
+            tr
+            {
+                th
+                {
+                    border-top: 0;
+                    .gg-select
+                    {
+                        cursor: pointer;
+                        &::before {
+                            margin-left: 3.5px;
+                            content: "\2191";
+                            opacity: .4;
+                        }
+                        &::after {
+                            content: "\2193";
+                            opacity: .4;
+                            margin-left: -4px
+                        }
+                    }
+                    &.desc {
+                        .gg-select {
+                            &::after {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    &.asc {
+                        .gg-select {
+                            &::before {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tbl_header {
+    .search {
+        max-width: 100%;
+        width: 300px;
+    }
+}
+
+.tbl_footer {
+    .page-item {
+        &.active {
+            .page-link {
+                background-color: #4142A2;
+                color: #fff;
+            }
+        }
+    }
+    .page-link {
+        color: #4142A2;
+        &:hover {
+            text-decoration: none;
+        }
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .per-page {
+        display: inline-block;
+        width: 80px;
+    }
+}
