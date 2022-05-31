@@ -22,7 +22,8 @@
         "owenmelbz/nova-radio-field": "^1.0",
         "pktharindu/nova-permissions": "^2.1",
         "spatie/laravel-permission": "^5.5",
-        "titasgailius/search-relations": "^2.0"
+        "titasgailius/search-relations": "^2.0",
+        "aws/aws-sdk-php": "~3.0"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
