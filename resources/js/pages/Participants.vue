@@ -1,7 +1,7 @@
 <template>
     <div class="participants-wrapper">
         <div class="message" v-if="showMessageBlock">
-            <p class="head-text">Welcome back! test changes </p>
+            <p class="head-text">Welcome back! </p>
             <p class="message-text">{{ study.participants_this_week }} new <template v-if="study.participants_this_week == 1">participant</template><template v-else>participants</template> have pre-screened and registered this week. <br> Schedule
                 screening visits now!</p>
             <img class="close-img" src="/images/icons/close-icon.svg" alt="" @click="showMessageBlock = false">
