@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Http\Controllers\API;
+namespace app\Http\Controllers\API;
 
 use Carbon\Carbon;
 use App\Models\Invitation;
