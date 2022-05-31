@@ -12,7 +12,7 @@ use App\Http\Controllers\Controller;
  *
  * Formatting all api controller responses
  */
-class ApiController extends Controller
+class APIController extends Controller
 {
     /**
      * Take array result and returns JSON response.

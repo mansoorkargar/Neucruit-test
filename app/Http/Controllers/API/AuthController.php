@@ -17,7 +17,7 @@ use App\Classes\Contracts\Services\RegisterService;
 /**
  * AuthController class
  */
-class AuthController extends ApiController
+class AuthController extends APIController
 {
     /**
      * Login method. Implements sanctum authentication.
