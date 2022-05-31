@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace app\Http\Controllers\API;
+namespace App\Http\Controllers\API;
 
 use Carbon\Carbon;
 use App\Models\Invitation;
@@ -17,7 +17,7 @@ use App\Classes\Contracts\Services\RegisterService;
 /**
  * AuthController class
  */
-class AuthController extends APIController
+class AuthController extends ApiController
 {
     /**
      * Login method. Implements sanctum authentication.
